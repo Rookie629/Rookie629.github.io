@@ -41,7 +41,7 @@ redirect_from:
 }
 .pub-card {
   display: grid;
-  grid-template-columns: 112px 1fr;
+  grid-template-columns: 130px 1fr;
   gap: 1rem;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
@@ -50,18 +50,10 @@ redirect_from:
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
 }
 .pub-thumb {
-  min-height: 92px;
+  width: 100%;
   border-radius: 8px;
-  background: linear-gradient(135deg, #dbeafe 0%, #e0f2fe 45%, #dcfce7 100%);
   border: 1px solid #d7dee5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #2563eb;
-  font-weight: 700;
-  font-size: 0.82rem;
-  text-align: center;
-  padding: 0.5rem;
+  background: #f8fafc;
 }
 .pub-card h3 {
   margin: 0 0 0.25rem;
@@ -69,29 +61,14 @@ redirect_from:
   line-height: 1.35;
 }
 .pub-authors,
-.pub-desc {
-  color: #4b5563;
-  font-size: 0.92rem;
-  line-height: 1.55;
-}
 .pub-venue {
-  color: #111827;
+  color: #374151;
   font-size: 0.92rem;
+  line-height: 1.5;
 }
-.pub-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin: 0.55rem 0;
-}
-.pub-tag {
-  border-radius: 999px;
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
-  color: #334155;
-  padding: 0.16rem 0.5rem;
-  font-size: 0.72rem;
-  font-weight: 600;
+.pub-authors strong {
+  color: #111827;
+  font-weight: 800;
 }
 .quick-links a {
   margin-right: 0.6rem;
@@ -102,7 +79,7 @@ redirect_from:
     grid-template-columns: 1fr;
   }
   .pub-thumb {
-    min-height: 70px;
+    max-width: 260px;
   }
 }
 </style>
@@ -131,32 +108,29 @@ redirect_from:
 
 <div class="pub-list">
   <article class="pub-card">
-    <div class="pub-thumb">Soft Finger<br>Proprioception</div>
+    <a href="/publications/dreampolicy/"><img class="pub-thumb" src="/images/publications/dreampolicy.svg" alt="DreamPolicy thumbnail" /></a>
     <div>
-      <h3><a href="/publications/visual-auditory-proprioception/">Visual-Auditory Proprioception of Soft Finger Shape and Contact</a></h3>
-      <p class="pub-authors"><strong>Ke Yang</strong> et al.</p>
-      <p class="pub-venue"><strong>ICRA 2026</strong></p>
-      <p class="pub-desc">Multimodal proprioceptive sensing for estimating soft finger shape and contact state from visual and auditory signals.</p>
-      <div class="pub-tags">
-        <span class="pub-tag">Soft Robotics</span>
-        <span class="pub-tag">Robot Perception</span>
-        <span class="pub-tag">Contact Sensing</span>
-      </div>
+      <h3><a href="/publications/dreampolicy/">DreamPolicy: A Unified World-model Policy for Scalable Humanoid Locomotion</a></h3>
+      <p class="pub-authors">Yahao Fan#, Tianxiang Gui#, Kaiyang Ji#, Shutong Ding, Chixuan Zhang, Yifeng Xu, <strong>Ke Yang</strong>, Jiayuan Gu, Jingyi Yu, Jingya Wang*, Ye Shi*</p>
+      <p class="pub-venue"><strong>ArXiv</strong>, 2025</p>
     </div>
   </article>
 
   <article class="pub-card">
-    <div class="pub-thumb">DexCtrl</div>
+    <a href="/publications/sisyphus/"><img class="pub-thumb" src="/images/publications/sisyphus.svg" alt="Sisyphus thumbnail" /></a>
     <div>
-      <h3><a href="/publications/dexctrl/">DexCtrl: Towards Sim-to-Real Dexterity with Adaptive Controller Learning</a></h3>
-      <p class="pub-authors"><strong>Ke Yang</strong> et al.</p>
-      <p class="pub-venue"><strong>ICRA 2026</strong></p>
-      <p class="pub-desc">Adaptive controller learning for transferring dexterous manipulation behavior from simulation to real robotic systems.</p>
-      <div class="pub-tags">
-        <span class="pub-tag">Dexterous Manipulation</span>
-        <span class="pub-tag">Reinforcement Learning</span>
-        <span class="pub-tag">Sim-to-Real</span>
-      </div>
+      <h3><a href="/publications/sisyphus/">Sisyphus: An Attention-driven Humanoid Object Interaction Policy</a></h3>
+      <p class="pub-authors">Tianxiang Gui, <strong>Ke Yang</strong>, Yahao Fan, Chixuan Zhang, Jingya Wang*, Ye Shi*</p>
+      <p class="pub-venue"><strong>IROS 2025 Workshop on Augmentative Human-Robot Interaction</strong>, 2025</p>
+    </div>
+  </article>
+
+  <article class="pub-card">
+    <a href="/publications/language-action-model/"><img class="pub-thumb" src="/images/publications/language-action-model.svg" alt="Language Action Model thumbnail" /></a>
+    <div>
+      <h3><a href="/publications/language-action-model/">Commanding Humanoid by Free-form Language: A Large Language Action Model with Unified Motion Vocabulary</a></h3>
+      <p class="pub-authors">Zhirui Liu#, Kaiyang Ji#, <strong>Ke Yang</strong>, Yahao Fan, Jingyi Yu, Ye Shi, Jingya Wang*</p>
+      <p class="pub-venue"><strong>ArXiv</strong>, 2025</p>
     </div>
   </article>
 </div>
