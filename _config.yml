@@ -18,11 +18,11 @@ author:
   location: "Shanghai, China"
   employer: "ShanghaiTech University"
   uri: "https://Rookie629.github.io"
-  email: "REPLACE_WITH_EMAIL@shanghaitech.edu.cn"
+  email: "ky2276@nyu.edu"
 
   academia:
   arxiv:
-  googlescholar: "https://scholar.google.com/scholar?q=%22Ke+Yang%22+robotics"
+  googlescholar:
   inspire-hep:
   impactstory:
   orcid:
@@ -108,7 +108,6 @@ social:
   links:
     - "https://Rookie629.github.io"
     - "https://github.com/Rookie629"
-    - "https://scholar.google.com/scholar?q=%22Ke+Yang%22+robotics"
 
 # Analytics
 analytics:
