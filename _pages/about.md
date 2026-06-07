@@ -34,24 +34,76 @@ redirect_from:
   font-size: 0.78rem;
   font-weight: 600;
 }
-.card-grid {
+.pub-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 0.9rem;
+  gap: 1rem;
   margin: 1rem 0 1.6rem;
 }
-.info-card {
+.pub-card {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 1rem;
   border: 1px solid #e5e7eb;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 1rem;
   background: #fff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
 }
-.info-card h3 {
-  margin-top: 0;
+.pub-thumb {
+  min-height: 92px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #dbeafe 0%, #e0f2fe 45%, #dcfce7 100%);
+  border: 1px solid #d7dee5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+.pub-card h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+.pub-authors,
+.pub-desc {
+  color: #4b5563;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+.pub-venue {
+  color: #111827;
+  font-size: 0.92rem;
+}
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0.55rem 0;
+}
+.pub-tag {
+  border-radius: 999px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  color: #334155;
+  padding: 0.16rem 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
 }
 .quick-links a {
   margin-right: 0.6rem;
   white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .pub-card {
+    grid-template-columns: 1fr;
+  }
+  .pub-thumb {
+    min-height: 70px;
+  }
 }
 </style>
 
@@ -77,17 +129,36 @@ redirect_from:
 
 ## Selected Publications
 
-<div class="card-grid">
-  <div class="info-card">
-    <h3><a href="/publications/visual-auditory-proprioception/">Visual-Auditory Proprioception of Soft Finger Shape and Contact</a></h3>
-    <p><strong>ICRA 2026</strong></p>
-    <p>Soft robot proprioception through visual-auditory sensing for finger shape and contact understanding.</p>
-  </div>
-  <div class="info-card">
-    <h3><a href="/publications/dexctrl/">DexCtrl: Towards Sim-to-Real Dexterity with Adaptive Controller Learning</a></h3>
-    <p><strong>ICRA 2026</strong></p>
-    <p>Adaptive controller learning for transferring dexterous manipulation from simulation to real robotic systems.</p>
-  </div>
+<div class="pub-list">
+  <article class="pub-card">
+    <div class="pub-thumb">Soft Finger<br>Proprioception</div>
+    <div>
+      <h3><a href="/publications/visual-auditory-proprioception/">Visual-Auditory Proprioception of Soft Finger Shape and Contact</a></h3>
+      <p class="pub-authors"><strong>Ke Yang</strong> et al.</p>
+      <p class="pub-venue"><strong>ICRA 2026</strong></p>
+      <p class="pub-desc">Multimodal proprioceptive sensing for estimating soft finger shape and contact state from visual and auditory signals.</p>
+      <div class="pub-tags">
+        <span class="pub-tag">Soft Robotics</span>
+        <span class="pub-tag">Robot Perception</span>
+        <span class="pub-tag">Contact Sensing</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="pub-card">
+    <div class="pub-thumb">DexCtrl</div>
+    <div>
+      <h3><a href="/publications/dexctrl/">DexCtrl: Towards Sim-to-Real Dexterity with Adaptive Controller Learning</a></h3>
+      <p class="pub-authors"><strong>Ke Yang</strong> et al.</p>
+      <p class="pub-venue"><strong>ICRA 2026</strong></p>
+      <p class="pub-desc">Adaptive controller learning for transferring dexterous manipulation behavior from simulation to real robotic systems.</p>
+      <div class="pub-tags">
+        <span class="pub-tag">Dexterous Manipulation</span>
+        <span class="pub-tag">Reinforcement Learning</span>
+        <span class="pub-tag">Sim-to-Real</span>
+      </div>
+    </div>
+  </article>
 </div>
 
 ## Education
