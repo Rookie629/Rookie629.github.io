@@ -7,20 +7,20 @@ classes: wide
 ---
 
 <style>
-.pub-year {
-  margin: 1.3rem 0 0.8rem;
-  color: #1f2937;
-  font-size: 1.3rem;
+.pub-section-title {
+  margin: 1.5rem 0 0.85rem;
+  color: #111827;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 .pub-list {
   display: grid;
   gap: 1rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
 }
 .pub-card {
   display: grid;
-  grid-template-columns: 112px 1fr;
+  grid-template-columns: 148px 1fr;
   gap: 1rem;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
@@ -29,62 +29,39 @@ classes: wide
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
 }
 .pub-thumb {
-  min-height: 92px;
+  width: 100%;
   border-radius: 8px;
-  background: linear-gradient(135deg, #dbeafe 0%, #e0f2fe 45%, #dcfce7 100%);
   border: 1px solid #d7dee5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #2563eb;
-  font-weight: 700;
-  font-size: 0.82rem;
-  text-align: center;
-  padding: 0.5rem;
+  background: #f8fafc;
 }
 .pub-card h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1.02rem;
+  margin: 0 0 0.35rem;
+  font-size: 1.04rem;
   line-height: 1.35;
 }
 .pub-authors {
-  margin: 0.15rem 0;
-  color: #4b5563;
+  margin: 0.2rem 0;
+  color: #374151;
   font-size: 0.92rem;
+  line-height: 1.5;
+}
+.pub-authors strong {
+  color: #111827;
+  font-weight: 800;
 }
 .pub-venue {
-  margin: 0.2rem 0 0.55rem;
+  margin: 0.25rem 0 0.65rem;
   color: #111827;
   font-size: 0.92rem;
-}
-.pub-desc {
-  margin: 0.4rem 0 0.65rem;
-  color: #4b5563;
-  font-size: 0.92rem;
-  line-height: 1.55;
-}
-.pub-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin: 0.55rem 0;
-}
-.pub-tag {
-  border-radius: 999px;
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
-  color: #334155;
-  padding: 0.16rem 0.5rem;
-  font-size: 0.72rem;
-  font-weight: 600;
 }
 .pub-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin-top: 0.65rem;
+  margin-top: 0.55rem;
 }
-.pub-links a {
+.pub-links a,
+.pub-links span {
   border: 1px solid #cbd5e1;
   border-radius: 6px;
   padding: 0.22rem 0.55rem;
@@ -92,54 +69,73 @@ classes: wide
   font-weight: 700;
   text-decoration: none;
 }
+.pub-links span {
+  color: #64748b;
+  background: #f8fafc;
+}
+.empty-note {
+  color: #6b7280;
+  font-size: 0.92rem;
+  margin-bottom: 1.6rem;
+}
 @media (max-width: 640px) {
   .pub-card {
     grid-template-columns: 1fr;
   }
   .pub-thumb {
-    min-height: 70px;
+    max-width: 260px;
   }
 }
 </style>
 
-<div class="pub-year">2026</div>
+## Preprints
 
 <div class="pub-list">
   <article class="pub-card">
-    <div class="pub-thumb">Soft Finger<br>Proprioception</div>
+    <a href="/publications/dreampolicy/"><img class="pub-thumb" src="/images/publications/dreampolicy.svg" alt="DreamPolicy thumbnail" /></a>
     <div>
-      <h3><a href="/publications/visual-auditory-proprioception/">Visual-Auditory Proprioception of Soft Finger Shape and Contact</a></h3>
-      <p class="pub-authors"><strong>Ke Yang</strong> et al.</p>
-      <p class="pub-venue"><strong>ICRA 2026</strong> · IEEE International Conference on Robotics and Automation</p>
-      <p class="pub-desc">Multimodal proprioceptive sensing for estimating soft finger shape and contact state from visual and auditory signals.</p>
-      <div class="pub-tags">
-        <span class="pub-tag">Soft Robotics</span>
-        <span class="pub-tag">Robot Perception</span>
-        <span class="pub-tag">Contact Sensing</span>
-      </div>
+      <h3><a href="/publications/dreampolicy/">DreamPolicy: A Unified World-model Policy for Scalable Humanoid Locomotion</a></h3>
+      <p class="pub-authors">Yahao Fan#, Tianxiang Gui#, Kaiyang Ji#, Shutong Ding, Chixuan Zhang, Yifeng Xu, <strong>Ke Yang</strong>, Jiayuan Gu, Jingyi Yu, Jingya Wang*, Ye Shi*</p>
+      <p class="pub-venue"><strong>ArXiv</strong>, 2025</p>
       <div class="pub-links">
-        <a href="/publications/visual-auditory-proprioception/">Project Page</a>
-        <a href="mailto:ky2276@nyu.edu">Contact</a>
+        <a href="/publications/dreampolicy/">Details</a>
+        <span>Paper coming soon</span>
       </div>
     </div>
   </article>
 
   <article class="pub-card">
-    <div class="pub-thumb">DexCtrl</div>
+    <a href="/publications/language-action-model/"><img class="pub-thumb" src="/images/publications/language-action-model.svg" alt="Language Action Model thumbnail" /></a>
     <div>
-      <h3><a href="/publications/dexctrl/">DexCtrl: Towards Sim-to-Real Dexterity with Adaptive Controller Learning</a></h3>
-      <p class="pub-authors"><strong>Ke Yang</strong> et al.</p>
-      <p class="pub-venue"><strong>ICRA 2026</strong> · IEEE International Conference on Robotics and Automation</p>
-      <p class="pub-desc">Adaptive controller learning for transferring dexterous manipulation behavior from simulation to real robotic systems.</p>
-      <div class="pub-tags">
-        <span class="pub-tag">Dexterous Manipulation</span>
-        <span class="pub-tag">Reinforcement Learning</span>
-        <span class="pub-tag">Sim-to-Real</span>
-      </div>
+      <h3><a href="/publications/language-action-model/">Commanding Humanoid by Free-form Language: A Large Language Action Model with Unified Motion Vocabulary</a></h3>
+      <p class="pub-authors">Zhirui Liu#, Kaiyang Ji#, <strong>Ke Yang</strong>, Yahao Fan, Jingyi Yu, Ye Shi, Jingya Wang*</p>
+      <p class="pub-venue"><strong>ArXiv</strong>, 2025</p>
       <div class="pub-links">
-        <a href="/publications/dexctrl/">Project Page</a>
-        <a href="mailto:ky2276@nyu.edu">Contact</a>
+        <a href="/publications/language-action-model/">Details</a>
+        <span>Paper coming soon</span>
+        <span>Project coming soon</span>
       </div>
     </div>
   </article>
 </div>
+
+## Workshop Papers
+
+<div class="pub-list">
+  <article class="pub-card">
+    <a href="/publications/sisyphus/"><img class="pub-thumb" src="/images/publications/sisyphus.svg" alt="Sisyphus thumbnail" /></a>
+    <div>
+      <h3><a href="/publications/sisyphus/">Sisyphus: An Attention-driven Humanoid Object Interaction Policy</a></h3>
+      <p class="pub-authors">Tianxiang Gui, <strong>Ke Yang</strong>, Yahao Fan, Chixuan Zhang, Jingya Wang*, Ye Shi*</p>
+      <p class="pub-venue"><strong>IROS 2025 Workshop on Augmentative Human-Robot Interaction</strong>, 2025</p>
+      <div class="pub-links">
+        <a href="/publications/sisyphus/">Details</a>
+        <span>Paper coming soon</span>
+      </div>
+    </div>
+  </article>
+</div>
+
+## Conference Papers
+
+<p class="empty-note">No conference papers listed yet.</p>
