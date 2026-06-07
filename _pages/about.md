@@ -59,9 +59,8 @@ redirect_from:
   <h2>Research Assistant, ShanghaiTech University</h2>
   <p>I am Ke Yang, a robotics researcher working on humanoid robotics, dexterous manipulation, robot perception, reinforcement learning, world models, and vision-language-action models.</p>
   <p class="quick-links">
-    <a href="https://scholar.google.com/scholar?q=%22Ke+Yang%22+robotics">Google Scholar</a>
     <a href="https://github.com/Rookie629">GitHub</a>
-    <a href="mailto:REPLACE_WITH_EMAIL@shanghaitech.edu.cn">Email</a>
+    <a href="mailto:ky2276@nyu.edu">Email</a>
   </p>
 </div>
 
@@ -91,15 +90,6 @@ redirect_from:
   </div>
 </div>
 
-## Projects
-
-<div class="card-grid">
-  <div class="info-card"><h3><a href="/projects/unitree-g1-humanoid/">Unitree G1 Humanoid</a></h3><p>Humanoid robotics platform experiments for control, perception, and embodied intelligence.</p></div>
-  <div class="info-card"><h3><a href="/projects/foundationpose-deployment/">FoundationPose Deployment</a></h3><p>Deployment pipeline for object pose estimation in robotic manipulation scenes.</p></div>
-  <div class="info-card"><h3><a href="/projects/soft-robot-proprioception/">Soft Robot Proprioception</a></h3><p>Multimodal sensing for soft robotic fingers, shape estimation, and contact perception.</p></div>
-  <div class="info-card"><h3><a href="/projects/point-cloud-adversarial-attack/">Point Cloud Adversarial Attack</a></h3><p>Robustness analysis for point cloud perception models used in 3D robot perception.</p></div>
-</div>
-
 ## Education
 
 - M.S. Mechatronics and Robotics, New York University
@@ -111,6 +101,5 @@ Research Assistant, ShanghaiTech University
 
 ## Contact {#contact}
 
-- Google Scholar: [Ke Yang robotics search](https://scholar.google.com/scholar?q=%22Ke+Yang%22+robotics)
 - GitHub: [Rookie629](https://github.com/Rookie629)
-- Email: [REPLACE_WITH_EMAIL@shanghaitech.edu.cn](mailto:REPLACE_WITH_EMAIL@shanghaitech.edu.cn)
+- Email: [ky2276@nyu.edu](mailto:ky2276@nyu.edu)
