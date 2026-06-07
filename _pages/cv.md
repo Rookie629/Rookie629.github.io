@@ -33,14 +33,7 @@ Publications
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
-Projects
-======
-<ul>{% for post in site.portfolio %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
-
 Links
 ======
-- [Google Scholar](https://scholar.google.com/scholar?q=%22Ke+Yang%22+robotics)
 - [GitHub](https://github.com/Rookie629)
-- [Email](mailto:REPLACE_WITH_EMAIL@shanghaitech.edu.cn)
+- [Email](mailto:ky2276@nyu.edu)
