@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300" role="img" aria-label="Sisyphus thumbnail">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fee2e2"/>
+      <stop offset="0.52" stop-color="#fef3c7"/>
+      <stop offset="1" stop-color="#e0f2fe"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="300" rx="24" fill="url(#g)"/>
+  <rect x="84" y="196" width="300" height="16" rx="8" fill="#475569" transform="rotate(-12 234 204)"/>
+  <circle cx="235" cy="139" r="43" fill="#f97316" opacity="0.92"/>
+  <path d="M165 186c25-25 50-39 78-39 33 0 58 17 82 43" fill="none" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  <text x="40" y="58" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f172a">Sisyphus</text>
+  <text x="40" y="88" font-family="Arial, sans-serif" font-size="15" fill="#334155">Attention-driven interaction policy</text>
+</svg>
