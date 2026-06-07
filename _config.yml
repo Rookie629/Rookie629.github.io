@@ -69,10 +69,10 @@ author:
 publication_category:
   conferences:
     title: "Conference Papers"
-  manuscripts:
-    title: "Journal Articles"
-  books:
-    title: "Books"
+  workshops:
+    title: "Workshop Papers"
+  preprints:
+    title: "Preprints"
 
 # Site Settings
 teaser:
